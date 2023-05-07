@@ -1,23 +1,23 @@
-import React from 'react';
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import React, { Component } from 'react';
+import Router from './markup/router';
+import './assets/css/bootstrap.css'
+import './assets/css/style.css'
+import './assets/css/responsive.css'
+import './assets/css/color.css'
 
 
 
-function App() {
-  return (
-   
-      <Router>
-        <>
-        THIS IS MY PAGE???
-         {/* <Navbar /> */}
-          <Switch>
-            {/* <Route exact path="/" component={SearchBooks} />
-            <Route exact path="/saved" component={SavedBooks} />
-            <Route render={() => <h1 className="display-2">Wrong page!</h1>} /> */}
-          </Switch>
-        </>
-      </Router>
-  );
+
+
+class App extends Component {
+
+  render() {
+    return (
+      <div className="App">
+        <Router />
+      </div>
+    );
+  }
 }
 
 export default App;
